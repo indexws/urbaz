@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center mb-5">Sistema de Gestión de Stock</h1>
+
+    </div>
+
+    <div class="col-md-6 ">
+      <p>El sistema de control de stock <b>Urbaz</b>, te ayudará a <b>Ajustar</b> el nivel de stock a la demanda de forma eficaz y <b>Asegurar</b> un buen nivel de servicio.</p>
+      <%= image_tag "warehouse-management.png", class:"rounded mx-auto d-block", style:"max-width:300px;" %>
+    </div>
+    <div class="col-md-6">
+      <div class="card card-30 mx-auto">
+        <div class="card-header">Ingresar al Sistema</div>
+        <div class="card-body">
+
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <div class="field">
+              <%= f.label :email %><br />
+              <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+            </div>
+
+            <div class="field">
+              <%= f.label :password %><br />
+              <%= f.password_field :password, autocomplete: "current-password" %>
+            </div>
+
+            <% if devise_mapping.rememberable? %>
+              <div class="field">
+                <%= f.check_box :remember_me, class: "custom-checkbox" %>
+                <%= f.label :remember_me %>
+              </div>
+            <% end %>
+
+            <div class="actions">
+              <%= f.submit "Ingresar", class: "btn-block" %>
+              <!--%= render "devise/shared/links" %-->
+            </div>
+          <% end %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
