@@ -1,0 +1,23 @@
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/">Inicio</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="<%%=<%=plural_table_name%>_path%>"><%=plural_table_name.titleize%></a>
+  </li>
+  <li class="breadcrumb-item active"><%%= @<%=singular_table_name%>.to_s%></li>
+</ol>
+
+<div class="container">
+  <div class="card card-register mx-auto mt-5">
+    <div class="card-header"><%%= @<%=singular_table_name%>.to_s %></div>
+    <div class="card-body">
+      <%- attributes.each do |attribute| -%>
+        <p>
+          <strong><%= attribute.human_name %>:</strong>
+          <%%= @<%=singular_table_name%>.<%= attribute.name %> %>
+        </p>
+      <%- end -%>
+    </div>
+  </div>
+</div>

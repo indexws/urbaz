@@ -1,0 +1,24 @@
+<%%= form_with(model: <%=singular_table_name%>, local: true) do |form| %>
+  <%% if <%=singular_table_name%>.errors.any? %>
+    <div id="error_explanation">
+      <h2><%%= pluralize(<%=singular_table_name%>.errors.count, "error") %> prohibited this <%=singular_table_name.to_s%> from being saved:</h2>
+
+      <ul>
+      <%% <%=singular_table_name%>.errors.full_messages.each do |message| %>
+        <li><%%= message %></li>
+      <%% end %>
+      </ul>
+    </div>
+  <%% end %>
+  <%- attributes.each do |attribute| -%>
+    <div class="field">
+      <%%= form.label :<%= attribute.human_name %>%>
+      <%%= form.<%= attribute.field_type %> :<%= attribute.human_name %> %>
+    </div>
+  <%- end -%>
+
+  <div class="actions">
+    <%%= link_to 'Volver', :back, class: "btn btn-primary" %>
+    <%%= form.submit %>
+  </div>
+<%% end %>

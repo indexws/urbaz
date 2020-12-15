@@ -1,0 +1,44 @@
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/">Inicio</a>
+  </li>
+  <li class="breadcrumb-item active"><%=plural_table_name.titleize%></li>
+</ol>
+
+<div class="card mb-3">
+  <div class="card-header">
+    <i class="fa fa-table"></i>
+    <%=plural_table_name.titleize%></div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="datatable">
+        <thead>
+          <tr>
+            <%- attributes.each do |attribute| -%>
+            <th><%= attribute.human_name %></th>
+            <%- end -%>
+          </tr>
+        </thead>
+
+        <tbody>
+          <%% @<%=plural_table_name%>.each do |<%=singular_table_name%>| %>
+            <tr>
+              <%- attributes.each do |attribute| -%>
+                <td><%=singular_table_name%>.<%= attribute.name %></td>
+              <%- end -%>
+              <td>
+                <%%= link_to((fa_icon "eye"), <%=singular_table_name%>) %>
+                <%%= link_to((fa_icon "pencil"), edit_<%=singular_table_name%>_path(<%=singular_table_name%>)) %>
+                <%%= link_to((fa_icon "trash-o"), <%=singular_table_name%>, method: :delete, data: { confirm: '¿Esta seguro que desea eliminar?' }) %>
+              </td>
+            </tr>
+          <%% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+</div>
+
+<%%= link_to 'Crear <%=singular_table_name.titleize%>', new_<%=singular_table_name%>_path, class: 'btn btn-primary' %>
