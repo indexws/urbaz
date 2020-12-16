@@ -10,7 +10,7 @@
 
 <div class="container">
   <div class="card card-register mx-auto mt-5">
-    <div class="card-header">Crear <%=singular_table_name.titleize%></div>
+    <div class="card-header">Modificar <%=singular_table_name.titleize%></div>
     <div class="card-body">
       <%%= render 'form', <%=singular_table_name%>: @<%=singular_table_name%> %>
     </div>
