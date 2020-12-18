@@ -1,0 +1,16 @@
+<h1>Pepes</h1>
+
+<table class="responsive nowrap table table-hover" id="dttb-pepes" data-sort="true" data-source="<%= url_for(format: :json)%>">
+  <thead>
+    <tr>
+      <th data-data="atributo">Atributo</th>
+      <th data-data="atributro2">Atributro2</th>
+      <th data-data="url" data-orderable="false" data-class-name="all" data-searchable="false" class="skip-export" width="100px"></th>
+    </tr>
+  </thead>
+
+</table>
+
+<br>
+
+<%= link_to 'New Pepe', new_pepe_path %>

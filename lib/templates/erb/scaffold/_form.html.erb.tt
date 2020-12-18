@@ -12,8 +12,8 @@
   <%% end %>
   <%- attributes.each do |attribute| -%>
     <div class="field">
-      <%%= form.label :<%= attribute.human_name %>%>
-      <%%= form.<%= attribute.field_type %> :<%= attribute.human_name %> %>
+      <%%= form.label :<%= attribute.name %>%>
+      <%%= form.<%= attribute.field_type %> :<%= attribute.name %> %>
     </div>
   <%- end -%>
 

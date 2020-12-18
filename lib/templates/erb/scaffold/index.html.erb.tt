@@ -16,9 +16,11 @@
         <thead>
           <tr>
             <%- attributes.each do |attribute| -%>
-            <th><%= attribute.human_name %></th>
+            <th><%%= attribute.human_name %></th>
             <%- end -%>
+            <th>Opciones</th>
           </tr>
+
         </thead>
 
         <tbody>

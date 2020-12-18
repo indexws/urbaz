@@ -1,0 +1,18 @@
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/">Inicio</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="<%= pepes_path%>"> pepe</a>
+  </li>
+  <li class="breadcrumb-item active">Crear Pepes</li>
+</ol>
+
+<div class="container">
+  <div class="card card-register mx-auto mt-5">
+    <div class="card-header">Modificar Pepe</div>
+    <div class="card-body">
+      <%= render 'form', pepe: @pepe %>
+    </div>
+  </div>
+</div>

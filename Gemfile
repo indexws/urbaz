@@ -73,15 +73,22 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Integración de Bootstrap stable
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.5.3'
+gem 'bootstrap-datepicker-rails'
+
+# Select 2
+gem "select2-rails"
+
+# Datatable
+gem 'jquery-datatables'
+gem 'ajax-datatables-rails'
+gem 'kaminari'
 
 # font-awesome
 gem "font-awesome-rails"
 
 # Mensajes de error
 gem 'toastr-rails'
-
 gem 'cocoon'
-
 gem 'barby'
 
 # Seguridad
@@ -91,5 +98,7 @@ gem 'rolify'
 
 # Chart JS
 #gem 'chart-js-rails'
-
 gem 'chartjs-ror'
+
+# Select 2
+gem "select2-rails"

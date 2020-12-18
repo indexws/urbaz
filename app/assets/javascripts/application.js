@@ -13,13 +13,17 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-
 //= require jquery3
 //= require popper
 //= require bootstrap
+//= require bootstrap-datepicker
+//= require datatables
+//= require select2
 //= require toastr
+//= require cocoon
 
 //= require admin
+//= require urbaz
 
 //= require_tree .
 $(document).ready(function() {

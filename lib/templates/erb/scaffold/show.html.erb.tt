@@ -18,6 +18,9 @@
           <%%= @<%=singular_table_name%>.<%= attribute.name %> %>
         </p>
       <%- end -%>
+      <div class="text-center">
+        <%= link_to 'Volver', :back, class: "btn btn-primary" %>
+      </div>
     </div>
   </div>
 </div>
