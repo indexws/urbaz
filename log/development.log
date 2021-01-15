@@ -7092,3 +7092,1631 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/pepes/new" for 127.0.0.1 at 2020-12-18 12:10:16 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by PepesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 406 Not Acceptable in 103ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionController::UnknownFormat (PepesController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.4) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.4) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.4) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.4) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.4) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.4) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.4) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.4) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.4) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.4) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.4) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.4) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.4) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.4) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.4) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.4) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.4) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.4) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.4) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.4) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (101.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (98.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to DeviseCreateUsers (20201116191842)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201116191842_devise_create_users.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20201116191842_devise_create_users.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20201116191842_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201116191842"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (72.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to RolifyCreateRoles (20201116191852)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "roles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "resource_type" varchar, "resource_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_resource_type_and_resource_id" ON "roles" ("resource_type", "resource_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users_roles" ("user_id" integer, "role_id" integer)[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_user_id" ON "users_roles" ("user_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_role_id" ON "users_roles" ("role_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_name" ON "roles" ("name")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:17
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201116191852"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (103.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreatePepes (20201218151238)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "pepes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "atributo" text, "atributro2" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201218151238_create_pepes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201218151238"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (115.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-18 15:14:10.224194"], ["updated_at", "2020-12-18 15:14:10.224194"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (70.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sageoffroy@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "sageoffroy@gmail.com"], ["encrypted_password", "$2a$12$7Ak3DHj1tTFiojEsTVtawOCbz3K462fb4oLeF4ruOX3rklipajU8q"], ["created_at", "2020-12-18 15:14:14.781449"], ["updated_at", "2020-12-18 15:14:14.781449"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (82.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT  "roles".* FROM "roles" WHERE "roles"."name" = ? AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL ORDER BY "roles"."id" ASC LIMIT ?[0m  [["name", "admin"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mRole Create (0.2ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "admin"], ["created_at", "2020-12-18 15:14:14.891691"], ["updated_at", "2020-12-18 15:14:14.891691"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (89.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mRole Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mRole Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser::HABTM_Roles Create (0.2ms)[0m  [1m[32mINSERT INTO "users_roles" ("user_id", "role_id") VALUES (?, ?)[0m  [["user_id", 1], ["role_id", 1]]
+  ↳ db/seeds.rb:15
+  [1m[35m (87.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "marcos.litterio@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "marcos.litterio@gmail.com"], ["encrypted_password", "$2a$12$BHeg/rEh7uaf/eQ34klhkOMWJVTY6.zGfA7MlW5iykAcfredF4RCu"], ["created_at", "2020-12-18 15:14:15.394592"], ["updated_at", "2020-12-18 15:14:15.394592"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (77.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT  "roles".* FROM "roles" WHERE "roles"."name" = ? AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL ORDER BY "roles"."id" ASC LIMIT ?[0m  [["name", "admin"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mRole Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mRole Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser::HABTM_Roles Create (0.4ms)[0m  [1m[32mINSERT INTO "users_roles" ("user_id", "role_id") VALUES (?, ?)[0m  [["user_id", 2], ["role_id", 1]]
+  ↳ db/seeds.rb:21
+  [1m[35m (82.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "amandifederico@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "amandifederico@gmail.com"], ["encrypted_password", "$2a$12$vtGRbYyRQeMqg9RUkgQ6CuKFm8wqKBTOlH0XFdo12oaiWxldI8ga2"], ["created_at", "2020-12-18 15:14:15.820627"], ["updated_at", "2020-12-18 15:14:15.820627"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (76.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT  "roles".* FROM "roles" WHERE "roles"."name" = ? AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL ORDER BY "roles"."id" ASC LIMIT ?[0m  [["name", "admin"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mRole Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mRole Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[36mUser::HABTM_Roles Create (0.4ms)[0m  [1m[32mINSERT INTO "users_roles" ("user_id", "role_id") VALUES (?, ?)[0m  [["user_id", 3], ["role_id", 1]]
+  ↳ db/seeds.rb:27
+  [1m[35m (76.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:27
+Started GET "/pepes/new" for 127.0.0.1 at 2020-12-18 12:14:22 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by PepesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 21ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-12-18 12:14:22 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2565.3ms)
+  Rendered layouts/_navbar.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 3019ms (Views: 3017.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-12-18 12:14:29 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F03qwIZlwqQxIGlIog6zLzn/5NkcpI6emSQowbd98bD95Bd3Wy3JnF7RlQtwiuUhkZo9e7nOT+exbCBcqOkjIw==", "user"=>{"email"=>"sageoffroy@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Ingresar"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sageoffroy@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/pepes/new
+Completed 302 Found in 330ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/pepes/new" for 127.0.0.1 at 2020-12-18 12:14:29 -0300
+Processing by PepesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/new.html.erb within layouts/application
+  Rendered pepes/_form.html.erb (15.1ms)
+  Rendered pepes/new.html.erb within layouts/application (15.9ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 200ms (Views: 189.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/pepes" for 127.0.0.1 at 2020-12-18 12:14:36 -0300
+Processing by PepesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2Ac0WkpJUDjx4arwMxTV47EFae8cQIydYDZEe7L7UA8G1fxWhCpJXVL9sOERpEoD097Jns0eMo79IhaLxHnaww==", "pepe"=>{"atributo"=>"Probando", "atributro2"=>"123"}, "commit"=>"Create Pepe"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pepes_controller.rb:30
+  [1m[36mPepe Create (0.3ms)[0m  [1m[32mINSERT INTO "pepes" ("atributo", "atributro2", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["atributo", "Probando"], ["atributro2", 123], ["created_at", "2020-12-18 15:14:36.207505"], ["updated_at", "2020-12-18 15:14:36.207505"]]
+  ↳ app/controllers/pepes_controller.rb:30
+  [1m[35m (98.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pepes_controller.rb:30
+Redirected to http://localhost:3000/pepes/1
+Completed 302 Found in 103ms (ActiveRecord: 98.7ms)
+
+
+Started GET "/pepes/1" for 127.0.0.1 at 2020-12-18 12:14:36 -0300
+Processing by PepesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" WHERE "pepes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pepes_controller.rb:67
+  Rendering pepes/show.html.erb within layouts/application
+  Rendered pepes/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 163ms (Views: 160.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes/new" for 127.0.0.1 at 2020-12-18 12:14:38 -0300
+Processing by PepesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/new.html.erb within layouts/application
+  Rendered pepes/_form.html.erb (1.7ms)
+  Rendered pepes/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 170ms (Views: 168.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:14:40 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  Rendered pepes/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 168ms (Views: 166.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pepes.json?_=1608304476746" for 127.0.0.1 at 2020-12-18 12:14:41 -0300
+Processing by PepesController#index as JSON
+  Parameters: {"_"=>"1608304476746"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.json.jbuilder
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.json.jbuilder:2
+  Rendered pepes/_pepe.json.jbuilder (0.5ms)
+  Rendered pepes/index.json.jbuilder (2.3ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes/1" for 127.0.0.1 at 2020-12-18 12:14:49 -0300
+Processing by PepesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" WHERE "pepes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pepes_controller.rb:67
+  Rendering pepes/show.html.erb within layouts/application
+  Rendered pepes/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 171ms (Views: 168.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:14:50 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  Rendered pepes/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 161ms (Views: 159.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pepes.json?_=1608304476747" for 127.0.0.1 at 2020-12-18 12:14:51 -0300
+Processing by PepesController#index as JSON
+  Parameters: {"_"=>"1608304476747"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.json.jbuilder
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.json.jbuilder:2
+  Rendered pepes/_pepe.json.jbuilder (0.7ms)
+  Rendered pepes/index.json.jbuilder (2.7ms)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes/1" for 127.0.0.1 at 2020-12-18 12:14:57 -0300
+Processing by PepesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" WHERE "pepes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pepes_controller.rb:67
+  Rendering pepes/show.html.erb within layouts/application
+  Rendered pepes/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 174ms (Views: 171.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:14:59 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  Rendered pepes/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 165ms (Views: 162.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pepes.json?_=1608304476748" for 127.0.0.1 at 2020-12-18 12:14:59 -0300
+Processing by PepesController#index as JSON
+  Parameters: {"_"=>"1608304476748"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.json.jbuilder
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.json.jbuilder:2
+  Rendered pepes/_pepe.json.jbuilder (0.5ms)
+  Rendered pepes/index.json.jbuilder (2.2ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes/1" for 127.0.0.1 at 2020-12-18 12:15:37 -0300
+Processing by PepesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mPepe Load (0.2ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" WHERE "pepes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pepes_controller.rb:67
+  Rendering pepes/show.html.erb within layouts/application
+  Rendered pepes/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 166ms (Views: 162.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:15:39 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  Rendered pepes/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 171ms (Views: 169.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pepes.json?_=1608304476749" for 127.0.0.1 at 2020-12-18 12:15:40 -0300
+Processing by PepesController#index as JSON
+  Parameters: {"_"=>"1608304476749"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.json.jbuilder
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.json.jbuilder:2
+  Rendered pepes/_pepe.json.jbuilder (0.8ms)
+  Rendered pepes/index.json.jbuilder (3.1ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (121.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (97.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to DeviseCreateUsers (20201116191842)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201116191842_devise_create_users.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20201116191842_devise_create_users.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20201116191842_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201116191842"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (71.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to RolifyCreateRoles (20201116191852)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "roles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "resource_type" varchar, "resource_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_resource_type_and_resource_id" ON "roles" ("resource_type", "resource_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users_roles" ("user_id" integer, "role_id" integer)[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_user_id" ON "users_roles" ("user_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_role_id" ON "users_roles" ("role_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_name" ON "roles" ("name")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:17
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201116191852"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (99.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreatePepes (20201218151701)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "pepes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "atributo" text, "atributro2" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201218151701_create_pepes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201218151701"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (114.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-18 15:17:11.615751"], ["updated_at", "2020-12-18 15:17:11.615751"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (70.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:17:35 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-12-18 12:17:35 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (207.8ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 475ms (Views: 466.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-12-18 12:17:38 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8p0Fl5TitdeOJ1Q5tm5RxzrC1p0xOnTbNZs5tGP1xBAsT82bWoGssi07TiiU3s4nWBl27OBkysioj2tEFXdO3A==", "user"=>{"email"=>"sageoffroy@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Ingresar"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sageoffroy@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8p0Fl5TitdeOJ1Q5tm5RxzrC1p0xOnTbNZs5tGP1xBAsT82bWoGssi07TiiU3s4nWBl27OBkysioj2tEFXdO3A==", "user"=>{"email"=>"sageoffroy@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Ingresar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 424ms (Views: 165.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sageoffroy@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "sageoffroy@gmail.com"], ["encrypted_password", "$2a$12$KdQKkuy2DRK.tA3oCdWr9O3j5J6s6ryqKu0ipmckPosfrCr4S33T."], ["created_at", "2020-12-18 15:17:47.862495"], ["updated_at", "2020-12-18 15:17:47.862495"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (81.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT  "roles".* FROM "roles" WHERE "roles"."name" = ? AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL ORDER BY "roles"."id" ASC LIMIT ?[0m  [["name", "admin"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "admin"], ["created_at", "2020-12-18 15:17:47.961802"], ["updated_at", "2020-12-18 15:17:47.961802"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (86.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mRole Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mRole Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser::HABTM_Roles Create (0.2ms)[0m  [1m[32mINSERT INTO "users_roles" ("user_id", "role_id") VALUES (?, ?)[0m  [["user_id", 1], ["role_id", 1]]
+  ↳ db/seeds.rb:15
+  [1m[35m (125.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "marcos.litterio@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "marcos.litterio@gmail.com"], ["encrypted_password", "$2a$12$Mbs2r15QIfr4eQExbf.gEerwEkFKhmngibPPYqZIvI4aK0tedCHfe"], ["created_at", "2020-12-18 15:17:48.449115"], ["updated_at", "2020-12-18 15:17:48.449115"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (76.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT  "roles".* FROM "roles" WHERE "roles"."name" = ? AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL ORDER BY "roles"."id" ASC LIMIT ?[0m  [["name", "admin"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mRole Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mRole Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser::HABTM_Roles Create (0.4ms)[0m  [1m[32mINSERT INTO "users_roles" ("user_id", "role_id") VALUES (?, ?)[0m  [["user_id", 2], ["role_id", 1]]
+  ↳ db/seeds.rb:21
+  [1m[35m (96.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "amandifederico@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "amandifederico@gmail.com"], ["encrypted_password", "$2a$12$0ymB5cKhaO/wdUlAAle6zu8zmOFRSnlSu2vFXmGc2GX7kTDjcne8O"], ["created_at", "2020-12-18 15:17:48.888950"], ["updated_at", "2020-12-18 15:17:48.888950"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (71.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mRole Load (0.1ms)[0m  [1m[34mSELECT  "roles".* FROM "roles" WHERE "roles"."name" = ? AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL ORDER BY "roles"."id" ASC LIMIT ?[0m  [["name", "admin"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mRole Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mRole Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[36mUser::HABTM_Roles Create (0.2ms)[0m  [1m[32mINSERT INTO "users_roles" ("user_id", "role_id") VALUES (?, ?)[0m  [["user_id", 3], ["role_id", 1]]
+  ↳ db/seeds.rb:27
+  [1m[35m (99.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:27
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-12-18 12:17:52 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (189.8ms)
+  Rendered layouts/_navbar.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 446ms (Views: 431.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-12-18 12:17:54 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fBgXPJzIJKqU5V9pS9XoeSGA32ZlaVjZi/fNdoEbBnqiyt8wUqs9zzf5RXhpZXeZQ1t/F7Q35soW45+G95mMtg==", "user"=>{"email"=>"sageoffroy@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Ingresar"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sageoffroy@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/pepes
+Completed 302 Found in 263ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:17:55 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendered pepes/index.html.erb within layouts/application (344.1ms)
+Completed 500 Internal Server Error in 349ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `attribute' for #<#<Class:0x00007f1da9056810>:0x00007f1da90527b0>):
+    15:       <table class="datatable">
+    16:         <thead>
+    17:           <tr>
+    18:             <th><%= attribute.human_name %></th>
+    19:             <th><%= attribute.human_name %></th>
+    20:             <th>Opciones</th>
+    21:           </tr>
+  
+app/views/pepes/index.html.erb:18:in `_app_views_pepes_index_html_erb___1809071497652959973_25900'
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:19:04 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendered pepes/index.html.erb within layouts/application (265.5ms)
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `attribute' for #<#<Class:0x00007f1da9056810>:0x00007f1da9b01710>):
+    15:       <table class="datatable">
+    16:         <thead>
+    17:           <tr>
+    18:             <th><%= attribute.human_name %></th>
+    19:             <th><%= attribute.human_name %></th>
+    20:             <th>Opciones</th>
+    21:           </tr>
+  
+app/views/pepes/index.html.erb:18:in `_app_views_pepes_index_html_erb___1809071497652959973_26580'
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:19:23 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.html.erb:26
+  Rendered pepes/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 170ms (Views: 168.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes/new" for 127.0.0.1 at 2020-12-18 12:19:35 -0300
+Processing by PepesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/new.html.erb within layouts/application
+  Rendered pepes/_form.html.erb (8.9ms)
+  Rendered pepes/new.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 184ms (Views: 176.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/pepes" for 127.0.0.1 at 2020-12-18 12:19:40 -0300
+Processing by PepesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dJkCadTpxBRiS02c6OIh0awrIwfTrkcK6EahOMHvTItWNyQQPNZCMSjbKLnx+440AzLpGKNldLshugU39MKZBQ==", "pepe"=>{"atributo"=>"Hola", "atributro2"=>"1234"}, "commit"=>"Create Pepe"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pepes_controller.rb:30
+  [1m[36mPepe Create (0.4ms)[0m  [1m[32mINSERT INTO "pepes" ("atributo", "atributro2", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["atributo", "Hola"], ["atributro2", 1234], ["created_at", "2020-12-18 15:19:40.873108"], ["updated_at", "2020-12-18 15:19:40.873108"]]
+  ↳ app/controllers/pepes_controller.rb:30
+  [1m[35m (377.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pepes_controller.rb:30
+Redirected to http://localhost:3000/pepes/1
+Completed 302 Found in 388ms (ActiveRecord: 378.5ms)
+
+
+Started GET "/pepes/1" for 127.0.0.1 at 2020-12-18 12:19:41 -0300
+Processing by PepesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mPepe Load (0.2ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" WHERE "pepes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pepes_controller.rb:67
+  Rendering pepes/show.html.erb within layouts/application
+  Rendered pepes/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (2.3ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 177ms (Views: 173.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:19:43 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.2ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.html.erb:26
+  Rendered pepes/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 215ms (Views: 211.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pepes/new" for 127.0.0.1 at 2020-12-18 12:20:04 -0300
+Processing by PepesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/new.html.erb within layouts/application
+  Rendered pepes/_form.html.erb (1.6ms)
+  Rendered pepes/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (3.0ms)
+  Rendered layouts/_sidebar.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 184ms (Views: 182.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/pepes" for 127.0.0.1 at 2020-12-18 12:20:11 -0300
+Processing by PepesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KO8cFzUQae1OrpWUxQGasACNAEQhzMyFXDMXZ9rMOGkKQTpu3S/vyAQ+8LHcGDVVr5TKW1EH/zSVz7No7+Ht5w==", "pepe"=>{"atributo"=>"adwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww", "atributro2"=>"4"}, "commit"=>"Create Pepe"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pepes_controller.rb:30
+  [1m[36mPepe Create (0.6ms)[0m  [1m[32mINSERT INTO "pepes" ("atributo", "atributro2", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["atributo", "adwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"], ["atributro2", 4], ["created_at", "2020-12-18 15:20:11.558979"], ["updated_at", "2020-12-18 15:20:11.558979"]]
+  ↳ app/controllers/pepes_controller.rb:30
+  [1m[35m (64.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pepes_controller.rb:30
+Redirected to http://localhost:3000/pepes/2
+Completed 302 Found in 74ms (ActiveRecord: 65.4ms)
+
+
+Started GET "/pepes/2" for 127.0.0.1 at 2020-12-18 12:20:11 -0300
+Processing by PepesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" WHERE "pepes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pepes_controller.rb:67
+  Rendering pepes/show.html.erb within layouts/application
+  Rendered pepes/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (21.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 226ms (Views: 222.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:20:13 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.html.erb:26
+  Rendered pepes/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 160ms (Views: 157.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-18 12:20:19 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 168ms (Views: 164.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:20:26 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.html.erb:26
+  Rendered pepes/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 163ms (Views: 161.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:20:36 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.html.erb:26
+  Rendered pepes/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 164ms (Views: 161.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes/2/edit" for 127.0.0.1 at 2020-12-18 12:20:49 -0300
+Processing by PepesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" WHERE "pepes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pepes_controller.rb:67
+  Rendering pepes/edit.html.erb within layouts/application
+  Rendered pepes/_form.html.erb (1.8ms)
+  Rendered pepes/edit.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 173ms (Views: 170.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:20:52 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.html.erb:26
+  Rendered pepes/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 170ms (Views: 168.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes/2" for 127.0.0.1 at 2020-12-18 12:20:53 -0300
+Processing by PepesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mPepe Load (0.4ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" WHERE "pepes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pepes_controller.rb:67
+  Rendering pepes/show.html.erb within layouts/application
+  Rendered pepes/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 171ms (Views: 168.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:20:56 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.html.erb:26
+  Rendered pepes/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 172ms (Views: 169.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pepes/new" for 127.0.0.1 at 2020-12-18 12:20:57 -0300
+Processing by PepesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/new.html.erb within layouts/application
+  Rendered pepes/_form.html.erb (1.8ms)
+  Rendered pepes/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 171ms (Views: 169.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:21:01 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.html.erb:26
+  Rendered pepes/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 172ms (Views: 170.0ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "pepes"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (85.6ms)[0m  [1m[35mCREATE TABLE "pepes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "atributo" text, "atributro2" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "roles"[0m
+  ↳ db/schema.rb:22
+  [1m[35m (99.7ms)[0m  [1m[35mCREATE TABLE "roles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "resource_type" varchar, "resource_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:22
+  [1m[35m (92.1ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")[0m
+  ↳ db/schema.rb:22
+  [1m[35m (99.8ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_name" ON "roles" ("name")[0m
+  ↳ db/schema.rb:22
+  [1m[35m (99.7ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_resource_type_and_resource_id" ON "roles" ("resource_type", "resource_id")[0m
+  ↳ db/schema.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:33
+  [1m[35m (100.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:33
+  [1m[35m (92.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/schema.rb:33
+  [1m[35m (91.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/schema.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users_roles"[0m
+  ↳ db/schema.rb:45
+  [1m[35m (92.0ms)[0m  [1m[35mCREATE TABLE "users_roles" ("user_id" integer, "role_id" integer)[0m
+  ↳ db/schema.rb:45
+  [1m[35m (100.6ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_role_id" ON "users_roles" ("role_id")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (100.9ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (99.7ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_user_id" ON "users_roles" ("user_id")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (100.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (78.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201218151701)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (91.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201116191842),
+(20201116191852);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (114.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-18 15:22:39.460877"], ["updated_at", "2020-12-18 15:22:39.460877"]]
+  ↳ db/schema.rb:13
+  [1m[35m (81.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "pepes"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (94.7ms)[0m  [1m[35mCREATE TABLE "pepes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "atributo" text, "atributro2" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "roles"[0m
+  ↳ db/schema.rb:22
+  [1m[35m (100.1ms)[0m  [1m[35mCREATE TABLE "roles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "resource_type" varchar, "resource_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:22
+  [1m[35m (108.8ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")[0m
+  ↳ db/schema.rb:22
+  [1m[35m (108.1ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_name" ON "roles" ("name")[0m
+  ↳ db/schema.rb:22
+  [1m[35m (99.7ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_resource_type_and_resource_id" ON "roles" ("resource_type", "resource_id")[0m
+  ↳ db/schema.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:33
+  [1m[35m (99.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:33
+  [1m[35m (93.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/schema.rb:33
+  [1m[35m (92.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/schema.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users_roles"[0m
+  ↳ db/schema.rb:45
+  [1m[35m (108.6ms)[0m  [1m[35mCREATE TABLE "users_roles" ("user_id" integer, "role_id" integer)[0m
+  ↳ db/schema.rb:45
+  [1m[35m (108.9ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_role_id" ON "users_roles" ("role_id")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (108.3ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (99.7ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_user_id" ON "users_roles" ("user_id")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (92.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (77.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201218151701)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (74.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201116191842),
+(20201116191852);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (115.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-18 15:22:41.152618"], ["updated_at", "2020-12-18 15:22:41.152618"]]
+  ↳ db/schema.rb:13
+  [1m[35m (91.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-12-18 15:22:41.247438"], ["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (96.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreatePepes (20201218152233)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20201218152233_create_pepes.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "pepes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "atributo" text, "atributro2" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201218152233_create_pepes.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreatePepes (20201218152233)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20201218152233_create_pepes.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "pepes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "atributo" text, "atributro2" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201218152233_create_pepes.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "pepes"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (102.2ms)[0m  [1m[35mCREATE TABLE "pepes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "atributo" text, "atributro2" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "roles"[0m
+  ↳ db/schema.rb:22
+  [1m[35m (91.6ms)[0m  [1m[35mCREATE TABLE "roles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "resource_type" varchar, "resource_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:22
+  [1m[35m (92.0ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")[0m
+  ↳ db/schema.rb:22
+  [1m[35m (91.4ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_name" ON "roles" ("name")[0m
+  ↳ db/schema.rb:22
+  [1m[35m (91.5ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_resource_type_and_resource_id" ON "roles" ("resource_type", "resource_id")[0m
+  ↳ db/schema.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:33
+  [1m[35m (91.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:33
+  [1m[35m (101.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/schema.rb:33
+  [1m[35m (91.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/schema.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users_roles"[0m
+  ↳ db/schema.rb:45
+  [1m[35m (108.7ms)[0m  [1m[35mCREATE TABLE "users_roles" ("user_id" integer, "role_id" integer)[0m
+  ↳ db/schema.rb:45
+  [1m[35m (100.4ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_role_id" ON "users_roles" ("role_id")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (91.8ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (91.3ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_user_id" ON "users_roles" ("user_id")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (101.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (82.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201218151701)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (74.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201116191842),
+(20201116191852);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (110.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-18 15:23:36.812776"], ["updated_at", "2020-12-18 15:23:36.812776"]]
+  ↳ db/schema.rb:13
+  [1m[35m (68.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "pepes"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (100.0ms)[0m  [1m[35mCREATE TABLE "pepes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "atributo" text, "atributro2" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "roles"[0m
+  ↳ db/schema.rb:22
+  [1m[35m (108.2ms)[0m  [1m[35mCREATE TABLE "roles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "resource_type" varchar, "resource_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:22
+  [1m[35m (101.2ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")[0m
+  ↳ db/schema.rb:22
+  [1m[35m (99.8ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_name" ON "roles" ("name")[0m
+  ↳ db/schema.rb:22
+  [1m[35m (91.3ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_resource_type_and_resource_id" ON "roles" ("resource_type", "resource_id")[0m
+  ↳ db/schema.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:33
+  [1m[35m (99.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:33
+  [1m[35m (92.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/schema.rb:33
+  [1m[35m (91.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/schema.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users_roles"[0m
+  ↳ db/schema.rb:45
+  [1m[35m (108.5ms)[0m  [1m[35mCREATE TABLE "users_roles" ("user_id" integer, "role_id" integer)[0m
+  ↳ db/schema.rb:45
+  [1m[35m (101.3ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_role_id" ON "users_roles" ("role_id")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (91.7ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (91.2ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_user_id" ON "users_roles" ("user_id")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (100.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (77.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201218151701)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (82.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201116191842),
+(20201116191852);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (124.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-18 15:23:38.470887"], ["updated_at", "2020-12-18 15:23:38.470887"]]
+  ↳ db/schema.rb:13
+  [1m[35m (92.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-12-18 15:23:38.566993"], ["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (104.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (109.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (100.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to DeviseCreateUsers (20201116191842)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201116191842_devise_create_users.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20201116191842_devise_create_users.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20201116191842_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201116191842"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (81.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to RolifyCreateRoles (20201116191852)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "roles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "resource_type" varchar, "resource_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_resource_type_and_resource_id" ON "roles" ("resource_type", "resource_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users_roles" ("user_id" integer, "role_id" integer)[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_user_id" ON "users_roles" ("user_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_role_id" ON "users_roles" ("role_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_name" ON "roles" ("name")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")[0m
+  ↳ db/migrate/20201116191852_rolify_create_roles.rb:17
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201116191852"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (97.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreatePepes (20201218152233)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "pepes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "atributo" text, "atributro2" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201218152233_create_pepes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201218152233"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (98.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-18 15:34:18.553953"], ["updated_at", "2020-12-18 15:34:18.553953"]]
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (79.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sageoffroy@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "sageoffroy@gmail.com"], ["encrypted_password", "$2a$12$aoa1khhTAAjuMEh5bV143.f5psx3K53TDmX6T2DeHwcxDW32tKBOy"], ["created_at", "2020-12-18 15:34:18.904072"], ["updated_at", "2020-12-18 15:34:18.904072"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (72.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT  "roles".* FROM "roles" WHERE "roles"."name" = ? AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL ORDER BY "roles"."id" ASC LIMIT ?[0m  [["name", "admin"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mRole Create (0.3ms)[0m  [1m[32mINSERT INTO "roles" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "admin"], ["created_at", "2020-12-18 15:34:18.992944"], ["updated_at", "2020-12-18 15:34:18.992944"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (88.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mRole Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mRole Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser::HABTM_Roles Create (0.2ms)[0m  [1m[32mINSERT INTO "users_roles" ("user_id", "role_id") VALUES (?, ?)[0m  [["user_id", 1], ["role_id", 1]]
+  ↳ db/seeds.rb:15
+  [1m[35m (99.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "marcos.litterio@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "marcos.litterio@gmail.com"], ["encrypted_password", "$2a$12$7UryzZHpmWqs6DwOLYnvTO4bwnBcC9nSSQGAU7s7xdBNlzqM4Wqsu"], ["created_at", "2020-12-18 15:34:19.452072"], ["updated_at", "2020-12-18 15:34:19.452072"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (99.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT  "roles".* FROM "roles" WHERE "roles"."name" = ? AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL ORDER BY "roles"."id" ASC LIMIT ?[0m  [["name", "admin"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mRole Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mRole Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser::HABTM_Roles Create (0.4ms)[0m  [1m[32mINSERT INTO "users_roles" ("user_id", "role_id") VALUES (?, ?)[0m  [["user_id", 2], ["role_id", 1]]
+  ↳ db/seeds.rb:21
+  [1m[35m (89.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "amandifederico@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "amandifederico@gmail.com"], ["encrypted_password", "$2a$12$0Toid8bdI252NSXJA/jrbeuj0qMq2Kf90SihYAC9D12X6ZZXFg2V6"], ["created_at", "2020-12-18 15:34:19.903545"], ["updated_at", "2020-12-18 15:34:19.903545"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (105.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT  "roles".* FROM "roles" WHERE "roles"."name" = ? AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL ORDER BY "roles"."id" ASC LIMIT ?[0m  [["name", "admin"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mRole Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mRole Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[36mUser::HABTM_Roles Create (0.4ms)[0m  [1m[32mINSERT INTO "users_roles" ("user_id", "role_id") VALUES (?, ?)[0m  [["user_id", 3], ["role_id", 1]]
+  ↳ db/seeds.rb:27
+  [1m[35m (73.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:27
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:34:28 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-12-18 12:34:28 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (206.2ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 459ms (Views: 457.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-12-18 12:34:34 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e/o+BkTmov9CbFOJVemwZMHf2BrpYT0xBs8S7rObQKtiCcXB1Ph4TAnJJJYs/4Q92KwDJWJoSA7ng2dQwY73Gg==", "user"=>{"email"=>"sageoffroy@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Ingresar"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sageoffroy@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/pepes
+Completed 302 Found in 260ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:34:34 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.2ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.html.erb:26
+  Rendered pepes/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 171ms (Views: 167.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pepes/new" for 127.0.0.1 at 2020-12-18 12:34:41 -0300
+Processing by PepesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/new.html.erb within layouts/application
+  Rendered pepes/_form.html.erb (2.6ms)
+  Rendered pepes/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 171ms (Views: 163.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/pepes" for 127.0.0.1 at 2020-12-18 12:34:47 -0300
+Processing by PepesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CuPO6pBrllpWYknjeGFQnDtbgZdTwzLWgRjuLNXf0PA6xxzLMJrLJyYGpSMl7zdsfaUPMchFTRJqOrukcGqvHA==", "pepe"=>{"atributo"=>"Prueba", "atributro2"=>"1233"}, "commit"=>"Create Pepe"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pepes_controller.rb:30
+  [1m[36mPepe Create (0.6ms)[0m  [1m[32mINSERT INTO "pepes" ("atributo", "atributro2", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["atributo", "Prueba"], ["atributro2", 1233], ["created_at", "2020-12-18 15:34:47.153451"], ["updated_at", "2020-12-18 15:34:47.153451"]]
+  ↳ app/controllers/pepes_controller.rb:30
+  [1m[35m (84.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pepes_controller.rb:30
+Redirected to http://localhost:3000/pepes/1
+Completed 302 Found in 91ms (ActiveRecord: 85.4ms)
+
+
+Started GET "/pepes/1" for 127.0.0.1 at 2020-12-18 12:34:47 -0300
+Processing by PepesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" WHERE "pepes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pepes_controller.rb:67
+  Rendering pepes/show.html.erb within layouts/application
+  Rendered pepes/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 173ms (Views: 169.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:34:49 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.html.erb:26
+  Rendered pepes/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 170ms (Views: 167.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:34:57 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT "pepes".* FROM "pepes"[0m
+  ↳ app/views/pepes/index.html.erb:26
+  Rendered pepes/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 169ms (Views: 167.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:35:58 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.2ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendered pepes/index.html.erb within layouts/application (287.3ms)
+Completed 500 Internal Server Error in 292ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `attribute' for #<#<Class:0x00007ff14a5c60c8>:0x00007ff1500e7ad8>):
+    15:       <table class="datatable">
+    16:         <thead>
+    17:           <tr>
+    18:             <th><%= attribute.human_name %></th>
+    19:             <th><%= attribute.human_name %></th>
+    20:             <th>Opciones</th>
+    21:           </tr>
+  
+app/views/pepes/index.html.erb:18:in `_app_views_pepes_index_html_erb__3916980680668470967_26720'
+Started GET "/pepes/1" for 127.0.0.1 at 2020-12-18 12:36:32 -0300
+Processing by PepesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" WHERE "pepes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pepes_controller.rb:67
+  Rendering pepes/show.html.erb within layouts/application
+  Rendered pepes/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 2497ms (Views: 2493.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pepes" for 127.0.0.1 at 2020-12-18 12:36:38 -0300
+Processing by PepesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendering pepes/index.html.erb within layouts/application
+  [1m[36mPepe Load (0.1ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Pepe Load (0.0ms)[0m  [1m[34mSELECT  "pepes".* FROM "pepes" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/bihos/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendered pepes/index.html.erb within layouts/application (301.5ms)
+Completed 500 Internal Server Error in 305ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `attribute' for #<#<Class:0x00007ff14a5c60c8>:0x00007ff14a5f7100>):
+    15:       <table class="datatable">
+    16:         <thead>
+    17:           <tr>
+    18:             <th><%= attribute.human_name %></th>
+    19:             <th><%= attribute.human_name %></th>
+    20:             <th>Opciones</th>
+    21:           </tr>
+  
+app/views/pepes/index.html.erb:18:in `_app_views_pepes_index_html_erb__3916980680668470967_27540'

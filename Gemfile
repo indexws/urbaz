@@ -99,6 +99,3 @@ gem 'rolify'
 # Chart JS
 #gem 'chart-js-rails'
 gem 'chartjs-ror'
-
-# Select 2
-gem "select2-rails"

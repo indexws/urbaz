@@ -19,7 +19,7 @@
         </p>
       <%- end -%>
       <div class="text-center">
-        <%= link_to 'Volver', :back, class: "btn btn-primary" %>
+        <%%= link_to 'Volver', :back, class: "btn btn-primary" %>
       </div>
     </div>
   </div>

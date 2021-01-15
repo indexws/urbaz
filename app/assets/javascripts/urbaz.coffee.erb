@@ -213,14 +213,6 @@ calc_debt = () ->
 
 $(document).ready ->
   $('[data-toggle="tooltip"]').tooltip()
-  datatable = $('.datatable')
-  datatable.DataTable
-    'language': 'url': '//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json'
-    'bPaginate': true
-    'info': false
-    'responsive': true
-    'deferRender': true
-    'stateSave': true
   form = $('form')
   form.integrateSelect2()
   form.integrateDatepicker()

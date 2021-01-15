@@ -1,2 +1,0 @@
-class Pepe < ApplicationRecord
-end
